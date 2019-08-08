@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,16 +14,21 @@
     <main role=main>
         <div class="" id="start-page">
             <header class="row" role="banner">
-                <h1 class="logo">trip-planner</h1>
-                <p>Don't worry if you didn't plan your stay in advance. Just type the city and discover the amazing places.. </p>
+                <h1 class="logo">What's nearby?</h1>
+                <p>Here are some things to do near you... Select the category and there you go...</p>
             </header>
-
-            <form action="#" class="search-form row" id="search-query-form">
-                <input type="text" placeholder="Enter a city" class="search-query" id="search-term" required>
-                <button type="submit" class="submit-button">Search</button>
-            </form>
         </div>
+        <br/>
         
+        <select id="radius" name="radius" class="form-control input-sm disabled hide" onChange="this.changeRadius">
+            <option key=500 value=500>500 meters</option>
+            <option key=1000 value=1000>1000 meters</option>
+            <option key=2000 value=2000>2000 meters</option>
+            <option key=5000 value=5000>5000 meters</option>
+            <option key=10000 value=10000>1000 meters</option>
+            
+        </select>
+
         <nav role="navigation" class="navigation hide" id="results-navigation">
             <div class="options row">
 
@@ -32,6 +38,7 @@
                 <button class="category-button" id="shops-button">SHOPS</button>
                 <button class="category-button" id="outdoors-button">OUTDOORS</button>
                 <button class="category-button" id="entertainment-button">ARTS</button>
+                <button class="category-button" id="Resort-button">Resort</button>
             </div>
         </nav>
 
@@ -40,7 +47,6 @@
     </main>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="index.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYwwQ-wTWZ6jI75jcsRz4if7dv30i5evo&libraries=places&callback=activatePlacesSearch"></script>
 </body>
 
 </html>
