@@ -1,7 +1,16 @@
+
+#map {
+  height: calc(100vh - 500px);
+  width: 100%;
+  background-color: grey;
+  
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    background: url("./images/bg.jpg");
+    background: url("./logo.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -83,33 +92,6 @@ form a {
 }
 
 
-/***** WEATHER DISPLAY *****/
-
-.weather-results {
-    padding: 10px;
-    margin: 30px 0;
-    text-align: center;
-}
-
-.weather-results h1 {
-    font-size: 40px;
-    color: black;
-    font-family: 'Megrim', sans-serif;
-}
-
-.weather-image {
-    width: 50%;
-}
-
-.weather-results {
-    margin: 10px;
-    padding: 10px;
-    width: 100%;
-    background: rgba(230, 223, 223, 0.7);
-    border-radius: 5px;
-}
-
-
 /***** NAVIGATION *****/
 
 nav {
@@ -178,17 +160,6 @@ div .result-image {
 
 #foursquare-results span.icon-text {
     padding: 8px 4px 0 4px;
-}
-
-
-/***** FOOTER *****/
-
-footer {
-    background-color: rgba(255, 255, 255, 0.7);
-    height: 125px;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 0 0 10px black;
 }
 
 
