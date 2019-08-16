@@ -12,19 +12,16 @@
 
 <body>
     
-<!--    &callback=initMap-->
-    
-    
     <main role=main>
         <div class="" id="start-page">
             <header class="row" role="banner">
-                <img src="./images/nearby.gif" alt="This is my animated image" height="250" width="450" style = float:left>
+                <img src="img/nearby.gif" alt="This is my animated image"  width="20%" style = float:left>
                 <p> Check out the interesting places around you...</p>
             </header>
         </div>
         <br />
          
-        <select id="radius" name="radius" class="form-control input-sm disabled hide" onChange="this.changeRadius" style = float:inherit>
+        <select id="radius" name="radius" class="form-control input-sm disabled hide" onChange="this.changeRadius">
             <option key=500 value=500>500 meters</option>
             <option key=1000 value=1000>1000 meters</option>
             <option key=2000 value=2000>2000 meters</option>
@@ -44,17 +41,15 @@
                 <button class="category-button" id="entertainment-button">ARTS</button>
             </div>
         </nav>
-
-<!--        <section id="foursquare-results" class="row">-->
         </section>
     </main>
     
-    <div id="map"></div>
+    <div id="map" style="display: none"></div>
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ5hTzcWKwWTTgbQzWFtcgiRz1gpLxCxM">
 </script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="bundle.js"></script>
 </body>
 
 </html>
